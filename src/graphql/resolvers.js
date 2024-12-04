@@ -16,8 +16,10 @@ export const resolvers = {
     }
   },
   Book: {
-    author: () => {
-      return authors[0]
+    author: ({author}) => {
+      return authors.find(author=>{
+        return author.id === author
+      })
     }
   }
 };
