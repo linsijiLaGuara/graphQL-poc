@@ -1,14 +1,18 @@
-import { createServer } from "@graphql-yoga/node";
-import { typeDefs } from "./graphql/typeDefs.js";
-import { resolvers } from "./graphql/resolvers.js";
+import { createYoga } from 'graphql-yoga';
+import { typeDefs } from './graphql/typeDefs';
+import { resolvers } from './graphql/resolvers';
 
-const server = createServer({
+const server = createYoga({
   schema: {
     typeDefs,
     resolvers,
   },
 });
 
-server.start({ port: 3000 }).then(({ port }) => {
-  console.log(`🚀 Server is running on http://localhost:${port}`);
-});
+server.start({ port: 3000 })
+  .then(({ port }) => {
+    console.log(` Server ready at http://localhost:${port}`)
+  })
+  .catch((err) => {
+    console.error('Error starting server:', err)
+  })
