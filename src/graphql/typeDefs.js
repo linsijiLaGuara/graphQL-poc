@@ -1,5 +1,5 @@
-//define 
-import { ApolloServer, gql } from 'apollo-server';
+import { gql } from "graphql-tag";
+
 export const typeDefs = gql`
   type Query {
     ping: String!

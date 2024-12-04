@@ -10,7 +10,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@babel/register": "^7.25.9",
+    "@graphql-yoga/node": "^3.9.1",
     "apollo-server": "^3.13.0",
+    "graphql": "^16.9.0",
+    "graphql-tag": "^2.12.6",
     "graphql-yoga": "^5.10.4"
   },
   "devDependencies": {
