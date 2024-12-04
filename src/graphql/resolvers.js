@@ -1,5 +1,15 @@
+import { books } from "../data/books"
+
 export const resolvers = {
   Query: {
-    ping: () => "pong",
-  },
+    ping() {
+      return 'pong'
+    },
+
+
+    books() {
+      return books
+    }
+
+  }
 };

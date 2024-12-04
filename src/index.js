@@ -22,6 +22,6 @@ const yoga = createYoga({
 const server = createServer(yoga);
 
 // Escuchar en el puerto 3000
-server.listen(3000, () => {
-  console.log("🚀 Server ready at http://localhost:3000/");
+server.listen(5000, () => {
+  console.log("🚀 Server ready at http://localhost:5000/");
 });
