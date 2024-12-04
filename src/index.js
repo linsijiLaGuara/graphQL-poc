@@ -1,4 +1,4 @@
-import { createYoga } from "graphql-yoga";
+import { createYoga } from 'graphql-yoga';
 import { createServer } from "http";
 import { makeExecutableSchema } from "@graphql-tools/schema";
 import { typeDefs } from "./graphql/typeDefs.js";
