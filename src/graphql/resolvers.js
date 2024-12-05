@@ -9,16 +9,16 @@ export const resolvers = {
 
 
     books() {
-      return books
+      return books;
     },
     authors() {
-      return authors
+      return authors;
     }
   },
   Book: {
-    author: ({author}) => {
-      return authors.find(author=>{
-        return author.id === author
+    author: ({ author }) => {
+      return authors.find(authorLibro => {
+        return authorLibro.id === author
       })
     }
   }

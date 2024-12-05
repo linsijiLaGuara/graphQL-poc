@@ -21,7 +21,7 @@ export const books = [
     {id:'5',
         title: 'El principito'
         ,
-        author:'15'
+        author:'5'
     }
 
 ]
