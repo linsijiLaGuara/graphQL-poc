@@ -5,6 +5,7 @@ export const typeDefs = gql`
     ping: String!
     books: [Book!]!
     authors: [Author!]!
+    reviews: [Reviews!]!
   }
     type Book {
     id:ID!
@@ -15,4 +16,9 @@ export const typeDefs = gql`
     id:ID!
     name: String!
     }
+    type Reviews {
+    id:ID!
+    text: String!
+    book:Book!
+    }   
 `;
