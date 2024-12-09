@@ -11,6 +11,7 @@ export const typeDefs = gql`
     id:ID!
     title: String!
     author:Author!
+    reviews: [Reviews!]!
     }
    type Author {
     id:ID!
