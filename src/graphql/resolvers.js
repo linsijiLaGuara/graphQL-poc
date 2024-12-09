@@ -2,7 +2,7 @@ import { authors } from "../data/authors";
 import { books } from "../data/books"
 import { reviews } from "../data/reviews"
 
-//aca importo los arreglos , agrego los Query a consultar
+//aca importo los arreglos , agrego los Query a consultar y se define para que sepa como obtener los campos
 export const resolvers = {
   Query: {
     ping() {
